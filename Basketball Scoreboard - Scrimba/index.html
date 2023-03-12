@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="scoreboard">
+            <h3>HOME</h3>
+            <div class="display" id="display--home">0
+            </div>
+            <div class="btns btns__home">
+                <button id="addOneHome" onclick="increaseHomeOne()">+1</button>
+                <button id="addTwoHome" onclick="increaseHomeTwo()">+2</button>
+                <button id="addThreeHome" onclick="increaseHomeThree()">+3</button>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <h3>GUEST</h3>
+            <div class="display display--guest" id="display--guest">0</div>
+            <div class="btns btns__quest">
+                <button id="addOneGuest" onclick="increaseGuestOne()">+1</button>
+                <button id="addTwoGuest" onclick="increaseGuestTwo()">+2</button>
+                <button id="addThreeGuest" onclick="increaseGuestThree()">+3</button>
+            </div>
+        </div>
+        <button class="newGameButton" id="newGameButton" onclick="startNewGame()">New Game</button>
+    </div>
+      <script src="script.js"></script>
+</body>
+
+</html>
